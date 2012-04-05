@@ -1,0 +1,31 @@
+#canvas {
+	width: 100%;
+	height: 800px;
+	border: 1px solid blue;
+	position: relative;
+}
+
+#canvas .aloha-container {
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	border: 1px solid green;
+	padding: 10px;
+}
+
+.aloha-container .ui-widget-header {
+	height: 20px;
+}
+
+.close-button {
+	float:right;
+}
+
+.aloha-content {
+	width: 100%;
+	height: 100%;
+}
+
+#canvas .chromeless {
+	border: none;
+}
