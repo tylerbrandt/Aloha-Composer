@@ -1,4 +1,6 @@
 Aloha.ready(function() {
+	var gridSize = 20;
+
 	$(document).ready(function() {
 		$("#save").click(function() {
 			var state = [];
@@ -73,7 +75,8 @@ Aloha.ready(function() {
 				height: cont.height 
 			})
 			.draggable({
-				handle: '.ui-widget-header'
+				handle: '.ui-widget-header',
+				grid: [gridSize,gridSize]
 			})
 			.resizable({
 				autoHide: true
@@ -92,8 +95,8 @@ Aloha.ready(function() {
 	
 	$("#canvas").click(function(e) {
 		createEditable({
-			left: e.pageX,
-			top: e.pageY,
+			left: Math.floor(e.pageX / gridSize) * gridSize,
+			top: Math.floor(e.pageY / gridSize) * gridSize,
 			width: '400px',
 			height: '200px',
 			content: ''

@@ -3,6 +3,7 @@
 	height: 800px;
 	border: 1px solid blue;
 	position: relative;
+	background-image: url('img/grid-cell.png');
 }
 
 #canvas .aloha-container {
